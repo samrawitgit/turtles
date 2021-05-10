@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+        
+        <!-- Librerie Bootstrap & altri -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Libreria icone -->
+        <script src="https://kit.fontawesome.com/f7e800693e.js" crossorigin="anonymous"></script>      
+        
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <title>Landing Page</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo-b.png" class="logo" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Progetti</a>
+                    <a class="nav-link" href="#">Unisciti</a>
+                    <a class="nav-link" href="#">Newsletter</a>  <!--  tabindex="-1" aria-disabled="true" -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Progetti -->
+        <div id="slide-progetti" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#progetto1" data-slide-to="0" class="active"></li>
+            <li data-target="#progetto2" data-slide-to="1"></li>
+            <li data-target="#progetto3" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div id="progetto1" class="carousel-item active" data-interval="3500">
+              <img src="img/casa-tartarughe.jpg" class="d-block w-100" alt="Progetto casa tartarughe">
+              <div class="carousel-caption d-none d-md-block center">
+                <h5>Casa delle tartarughe</h5>
+                <p>Abbiamo reinserito più di 1000 tartarughe nel loro habitat naturale</p>
+              </div>
+            </div>
+            <div id="progetto2" class="carousel-item" data-interval="3500">
+              <img src="img/barriera-corallina.jpg" class="d-block w-100" alt="Progetto pulizia barriera corallina">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cura della Barriera</h5>
+                <p>I nostri volontari hanno ripulito 9km della barriera corallina per ospitare più specie</p>
+              </div>
+            </div>
+            <div id="progetto3" class="carousel-item" data-interval="3500">
+              <img src="img/piccole-avventure.jpg" class="d-block w-100" alt="Cuccioli di tartaruga">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nascita delle tartarughine</h5>
+                <p>Proteggiamo le covate fino alla schiusa dai predatori</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#slide-progetti" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#slide-progetti" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    
+        <!-- Unisciti -->
+        <div class="container unisciti">
+          <h2 class="titolo-unisciti">Lavora con noi</h2>
+          <div class="row">
+
+            <div class="col-lg-4">
+              <div class="card"><!--style="width: 18rem;"-->
+                <img src="img/baby-tartaruga.jpg" class="card-img-top" alt="baby tartaruga">
+                <div class="card-body">
+                  <h5 class="card-title">Protezione Cuccioli</h5>
+                  <p class="card-text">Unisciti al nostro team di volontari per proteggere i cuccioli di tartaruga marina nelle splendide spiaggie della Sicilia.</p>
+                  <div class="flex-item d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary">Leggi di più</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card"><!--style="width: 18rem;"-->
+                <img src="img/pulizia-barriera.jpg" class="card-img-top" alt="Puliamo insieme la barriera">
+                <div class="card-body">
+                  <h5 class="card-title">Ripuliamo l'oceano</h5>
+                  <p class="card-text">Aiutaci a ripulire la barriera corallina di Aldabra, Seychelles, e scopri una delle mete turistiche più rinomate al mondo.</p>
+                  <div class="flex-item d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary">Leggi di più</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card"><!--style="width: 18rem;"-->
+                <img src="img/reintroduzione-natura.jpg" class="card-img-top" alt="Puliamo insieme la barriera">
+                <div class="card-body">
+                  <h5 class="card-title">Ritorno in natura</h5>
+                  <p class="card-text">Assisti il nostro team di biologi marini nella reintroduzione in antura di questa specie meravigliosa.</p>
+                  <div class="flex-item d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary">Leggi di più</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <!-- Newsletter -->
+        <div class="container newsletter md-shadow rounded">
+          <div class="row">
+            <div class="col-md-9">
+              <form>
+                <div class="form-group">
+                  <section class="newsletter-body">
+                    <h4>Iscriviti alla nostra newsletter</h4>
+                    <p> e ricevi le ultime notizie sui nostri progetti!</p>
+                  </section>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="la tua email">
+                  <small id="emailHelp" class="form-text text-muted">Non condivideremo la tua email con terze parti.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Iscriviti</button>
+          </form>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small pb-2 pt-3 pt-md-5">
+                <!-- elemento footer -->
+          <div class="container footer-primario">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="img/Logo-b.png" class="logo" alt="Logo">
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contattaci</a></li>
+                  <li><a href="#">Galleria</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">Progetti</a></li>
+                  <li><a href="#">Donazioni</a></li>
+                  <li><a href="#">terzo</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Termini e condizioni</a></li>
+                  <li><a href="#">Cookie policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+              <!-- fine elemento footer -->
+
+          <!--span class="linea"></span>    oppure hr oppure ::after -->
+
+              <!-- elemento footer -->
+          <div class="container footer-social">
+            <div class="row">
+
+              <div class="col-md-12 pt-5">
+                <div class="mb-5 d-flex justify-content-center">
+                  <!-- Facebook -->
+                  <a class="fb-ic">
+                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <!-- Twitter -->
+                  <a class="tw-ic">
+                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <!--Linkedin -->
+                  <a class="li-ic">
+                    <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <!--Instagram-->
+                  <a class="ins-ic">
+                    <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <div class="copyright">&#169;Copyright - Tutti i diritti riservati</div>
+          </div>
+                <!-- fine elemento footer -->
+        </footer>
+        
+
+        
+    </body>
+</html>

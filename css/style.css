@@ -1,0 +1,188 @@
+body *{
+    font-size: 20px;
+}
+
+/***Navbar***/
+.navbar{
+    background-color: #71bff9ba;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img.logo{
+    width: 65px;
+    height: 65px;
+}
+
+.navbar-brand{
+    margin-left: calc( 50% - 32.5px ); 
+}
+
+/***Cards Unisciti***/
+.unisciti .card{
+    margin: 30px;
+}
+
+.unisciti .titolo-unisciti{
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    font-size: xx-large;
+}
+
+.unisciti .titolo-unisciti::before{
+    content: "";
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    background-color: #0259ed87;
+    top: -5px;
+    left: calc( 50% - 50px );
+}
+
+.unisciti .card .btn{
+    width: 60%;
+    padding: 15px;
+}
+
+/***Newsletter***/
+.newsletter{
+    border: 10px solid #0259ed4a; 
+    padding: 40px;
+}
+.newsletter * {
+    text-align: center;
+}
+
+#emailHelp{
+    font-size: x-small;
+}
+
+.newsletter-body > h4{
+    text-transform: uppercase !important;
+}
+
+.newsletter-body > p{
+    font-size: 16px;
+}
+
+/***Footer***/
+footer {
+    background-color: #71bff9ba;
+    margin-top: 80px;
+    padding-top: 20px; 
+    text-align: center;
+}
+
+footer .logo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding-left: 0px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li > a {
+    color: black;
+    font-size: 16px;
+}
+
+footer .copyright{
+    font-size: small;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .unisciti .card{
+        margin-bottom: 40px;
+    }
+
+    .unisciti .titolo-unisciti{
+        margin-top: 120px;
+        font-size: 50px;
+    }
+
+    .unisciti .card-body *{
+        font-size: x-large;
+    }
+
+    .unisciti .card .btn{
+        margin: 15px;
+    }
+
+    .newsletter{
+        width: 510px
+    }
+    .newsletter .col-md-9{
+        margin-left: 55px;
+    }
+
+    footer .footer-primario{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    footer .footer-primario::after{
+        content: "";
+        width: 450px;
+        height: 1px;
+        position: absolute;
+        background-color: #0d2f6b87;
+        top: 145px;
+        left: calc( 50% - 225px );
+    }
+
+    footer ul {
+        padding-left: auto;
+    }
+}
+
+@media screen and (min-width: 922px) {
+
+    .navbar-brand{
+        margin-left: 0px; 
+    }
+
+    .carousel-caption {
+        color: black;
+        background-color: #ffffffb8;
+        border-radius: 10px;
+    }
+
+    .carousel-indicators > li{
+        background-color: black;
+    }
+
+    .unisciti .titolo-unisciti{
+        margin-bottom: 45px;
+    }
+
+    .unisciti .card{
+        margin: 0px;
+    }
+    .unisciti .card-body *{
+        font-size: 20px;
+    }
+
+    .newsletter{
+        margin-top: 100px;
+    }
+
+    footer .footer-primario{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    footer .footer-primario::after{
+        width: 800px;
+        top: 145px;
+        left: calc( 50% - 400px );
+    }
+}
